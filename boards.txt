@@ -21,6 +21,81 @@ menu.version=Version
 menu.lfclk=Low Frequency Clock
 menu.board_variant=Board Variant
 
+# nRF52810 variants
+###################
+
+nRF52810.name=Nordic nRF52810
+
+nRF52810.upload.tool=sandeepmistry:openocd
+nRF52810.upload.target=nrf52
+nRF52810.upload.maximum_size=196608
+
+nRF52810.bootloader.tool=sandeepmistry:openocd
+
+nRF52810.build.mcu=cortex-m4
+nRF52810.build.f_cpu=64000000
+nRF52810.build.board=nRF52810
+nRF52810.build.core=nRF5
+nRF52810.build.variant=nRF52810
+nRF52810.build.variant_system_lib=
+nRF52810.build.extra_flags=-DNRF52810_XXAA
+nRF52810.build.float_flags=-mfloat-abi=soft
+nRF52810.build.ldscript=nrf52810_xxaa.ld
+
+nRF52810.menu.softdevice.none=None
+nRF52810.menu.softdevice.none.softdevice=none
+nRF52810.menu.softdevice.none.softdeviceversion=
+
+nRF52810.menu.lfclk.lfxo=Crystal Oscillator
+nRF52810.menu.lfclk.lfxo.build.lfclk_flags=-DUSE_LFXO
+nRF52810.menu.lfclk.lfrc=RC Oscillator
+nRF52810.menu.lfclk.lfrc.build.lfclk_flags=-DUSE_LFRC
+nRF52810.menu.lfclk.lfsynt=Synthesized
+nRF52810.menu.lfclk.lfsynt.build.lfclk_flags=-DUSE_LFSYNT
+
+nRF52810.menu.reset.notenable=Don't enable
+nRF52810.menu.reset.notenable.build.reset_flags=
+nRF52810.menu.reset.enabled=Enable
+nRF52810.menu.reset.enabled.build.reset_flags=-DCONFIG_GPIO_AS_PINRESET
+
+# nRF52811 variants
+###################
+
+hy_2000x.name=hy_2000x
+
+hy_2000x.upload.tool=sandeepmistry:openocd
+hy_2000x.upload.target=nrf52
+hy_2000x.upload.maximum_size=196608
+
+hy_2000x.bootloader.tool=sandeepmistry:openocd
+
+hy_2000x.build.mcu=cortex-m4
+hy_2000x.build.f_cpu=64000000
+hy_2000x.build.board=nRF52811
+hy_2000x.build.core=nRF5
+hy_2000x.build.variant=hy_2000x
+hy_2000x.build.variant_system_lib=
+hy_2000x.build.extra_flags=-DNRF52811_XXAA
+hy_2000x.build.float_flags=-mfloat-abi=soft
+hy_2000x.build.ldscript=nrf52811_xxaa.ld
+
+hy_2000x.menu.softdevice.none=None
+hy_2000x.menu.softdevice.none.softdevice=none
+hy_2000x.menu.softdevice.none.softdeviceversion=
+
+
+hy_2000x.menu.lfclk.lfxo=Crystal Oscillator
+hy_2000x.menu.lfclk.lfxo.build.lfclk_flags=-DUSE_LFXO
+hy_2000x.menu.lfclk.lfrc=RC Oscillator
+hy_2000x.menu.lfclk.lfrc.build.lfclk_flags=-DUSE_LFRC
+hy_2000x.menu.lfclk.lfsynt=Synthesized
+hy_2000x.menu.lfclk.lfsynt.build.lfclk_flags=-DUSE_LFSYNT
+
+hy_2000x.menu.reset.notenable=Don't enable
+hy_2000x.menu.reset.notenable.build.reset_flags=
+hy_2000x.menu.reset.enabled=Enable
+hy_2000x.menu.reset.enabled.build.reset_flags=-DCONFIG_GPIO_AS_PINRESET
+
 # nRF52833 variants
 ###################
 
