@@ -14,8 +14,8 @@
   Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
-#ifndef _VARIANT_HY_2000x_
-#define _VARIANT_HY_2000x_
+#ifndef _VARIANT_nRF52811_
+#define _VARIANT_nRF52811_
 
 #include "nrf.h"
 #include "nrf_peripherals.h"

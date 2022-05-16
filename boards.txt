@@ -61,6 +61,43 @@ nRF52810.menu.reset.enabled.build.reset_flags=-DCONFIG_GPIO_AS_PINRESET
 # nRF52811 variants
 ###################
 
+nRF52811.name=Nordic nRF52811
+
+nRF52811.upload.tool=sandeepmistry:openocd
+nRF52811.upload.target=nrf52
+nRF52811.upload.maximum_size=196608
+
+nRF52811.bootloader.tool=sandeepmistry:openocd
+
+nRF52811.build.mcu=cortex-m4
+nRF52811.build.f_cpu=64000000
+nRF52811.build.board=nRF52811
+nRF52811.build.core=nRF5
+nRF52811.build.variant=nRF52811
+nRF52811.build.variant_system_lib=
+nRF52811.build.extra_flags=-DNRF52811_XXAA
+nRF52811.build.float_flags=-mfloat-abi=soft
+nRF52811.build.ldscript=nrf52811_xxaa.ld
+
+nRF52811.menu.softdevice.none=None
+nRF52811.menu.softdevice.none.softdevice=none
+nRF52811.menu.softdevice.none.softdeviceversion=
+
+nRF52811.menu.lfclk.lfxo=Crystal Oscillator
+nRF52811.menu.lfclk.lfxo.build.lfclk_flags=-DUSE_LFXO
+nRF52811.menu.lfclk.lfrc=RC Oscillator
+nRF52811.menu.lfclk.lfrc.build.lfclk_flags=-DUSE_LFRC
+nRF52811.menu.lfclk.lfsynt=Synthesized
+nRF52811.menu.lfclk.lfsynt.build.lfclk_flags=-DUSE_LFSYNT
+
+nRF52811.menu.reset.notenable=Don't enable
+nRF52811.menu.reset.notenable.build.reset_flags=
+nRF52811.menu.reset.enabled=Enable
+nRF52811.menu.reset.enabled.build.reset_flags=-DCONFIG_GPIO_AS_PINRESET
+
+# nRF52811-2 variants
+###################
+
 hy_2000x.name=hy_2000x
 
 hy_2000x.upload.tool=sandeepmistry:openocd

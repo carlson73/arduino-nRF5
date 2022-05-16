@@ -14,8 +14,8 @@
   Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
-#ifndef _VARIANT_HY_2000x_
-#define _VARIANT_HY_2000x_
+#ifndef _VARIANT_nRF52810_
+#define _VARIANT_nRF52810_
 
 #include "nrf.h"
 #include "nrf_peripherals.h"
@@ -52,8 +52,8 @@ extern "C"
 #define NUM_ANALOG_OUTPUTS   (8u)
 
 #define EBYTE
-#define PIN_LED1             (23)
-#define PIN_BUTTON           (24)
+#define PIN_LED1             (3)
+#define PIN_BUTTON           (22)
 #define BLUE_LED             (PIN_LED1)
 #define LED_BUILTIN          (PIN_LED1)
 #define SOUND_PIN            (20)
@@ -114,8 +114,8 @@ static const uint8_t SCK  = PIN_SPI_SCK ;
  */
 #define WIRE_INTERFACES_COUNT 1
 
-#define PIN_WIRE_SDA         (25u)
-#define PIN_WIRE_SCL         (28u)
+#define PIN_WIRE_SDA         (28u)
+#define PIN_WIRE_SCL         (25u)
 
 static const uint8_t SDA = PIN_WIRE_SDA;
 static const uint8_t SCL = PIN_WIRE_SCL;
